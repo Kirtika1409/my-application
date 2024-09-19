@@ -8,37 +8,37 @@ import { FaLanguage, FaBook, FaPersonBooth } from "react-icons/fa";
 const About = () => {
   return (
     <div className="job-footer">
-      <div class="card mb-4">
-        <div class="row g-0">
-          <div class="col-md-3">
-            <img src={about} class="img-fluid rounded-start" alt="about" />
+      <div className="card mb-4 mx-auto" style={{ maxWidth: "100%", width: "90%" }}>
+        <div className="row g-0">
+          <div className="col-12 col-md-4">
+            <img
+              src={about}
+              className="img-fluid rounded-start"
+              alt="about"
+              style={{ width: "100%", height: "auto" }}
+            />
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title">About Us</h3>
-              <p class="card-text">
-                We are looking for a Credentialing Coordinator to join our team
-                and oversee administrative tasks dealing with our health
-                facility’s credentialing. Credentialing Coordinator
-                responsibilities include maintaining and verifying files and
-                tracking the expiration of certifications throughout the
-                organization. Ultimately, you will work with different
-                departments across our organization to ensure staff members have
-                the necessary accreditations needed throughout the year.
+          <div className="col-12 col-md-8">
+            <div className="card-body">
+              <h3 className="card-title text-center text-md-start">About Us</h3>
+              <p className="card-text text-center text-md-start" style={{ wordBreak: "break-word" }}>
+                We are looking for a Credentialing Coordinator to join our team and oversee administrative tasks
+                dealing with our health facility’s credentialing. Credentialing Coordinator responsibilities include 
+                maintaining and verifying files and tracking the expiration of certifications throughout the 
+                organization. Ultimately, you will work with different departments across our organization to ensure 
+                staff members have the necessary accreditations needed throughout the year.
               </p>
-              <br />
-              <br />
-              <div className="d-flex justify-content-center">
-                <div className="icon-container mx-5">
-                  <FaLanguage size={50} />
+              <div className="d-flex justify-content-center justify-content-md-start">
+                <div className="icon-container mx-2 text-center">
+                  <FaLanguage size="2em" />
                   <p className="mt-2">Language</p>
                 </div>
-                <div className="icon-container mx-3">
-                  <FaBook size={50} />
+                <div className="icon-container mx-2 text-center">
+                  <FaBook size="2em" />
                   <p className="mt-2">Accessible</p>
                 </div>
-                <div className="icon-container mx-3">
-                  <FaPersonBooth size={50} />
+                <div className="icon-container mx-2 text-center">
+                  <FaPersonBooth size="2em" />
                   <p className="mt-2">Worldwide</p>
                 </div>
               </div>

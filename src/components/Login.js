@@ -28,7 +28,7 @@ const Login = () => {
               </div>
             )}
             <div class="mb-4 row">
-              <label for="staticEmail" class="col-sm-2 col-form-label">
+              <label for="staticEmail" class="col-sm-6">
                 Email
               </label>
               <div class="col-sm-10">
@@ -39,8 +39,8 @@ const Login = () => {
                 />
               </div>
             </div>
-            <div class="mb-3 row">
-              <label for="inputPassword" class="col-sm-2 col-form-label">
+            <div class="mb-2  row">
+              <label for="inputPassword" class="col-sm-6">
                 Password
               </label>
               <div class="col-sm-10">
@@ -52,7 +52,7 @@ const Login = () => {
               </div>
             </div>
 
-            <div class="d-grid gap-2 col-6 mx-auto">
+            <div class="d-grid gap-2 col-6 mx-auto btn">
               <button
                 class="btn btn-outline-primary"
                 type="button"

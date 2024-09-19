@@ -75,6 +75,7 @@ const JobDetail = () => {
           )}
         </div>
       </div>
+      <div className="btn">
       <button
         type="button"
         className="btn btn-outline-primary"
@@ -82,6 +83,7 @@ const JobDetail = () => {
       >
         Apply Now
       </button>
+      </div>
     </div>
   );
 };

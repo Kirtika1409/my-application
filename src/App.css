@@ -138,3 +138,31 @@ body, html {
   margin: 0 auto;   /* Center the list group */
 }
 
+.btn {
+  min-width: fit-content;
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 10px;
+  }
+
+  .icon-container p {
+    font-size: 0.9em; /* Make text smaller on smaller screens */
+  }
+
+  .card-text {
+    font-size: 0.9em; /* Reduce paragraph size for small screens */
+  }
+}
+
+.icon-container {
+  min-width: 80px;
+}
+
+.img-fluid {
+  max-height: 300px; /* Limit image height on small screens */
+  object-fit: cover; /* Ensure image scales well */
+}
+
+
