@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { jobList } from "../data/jobList";
-import { Button } from "react-bootstrap";
 
 const JobDetail = () => {
   const { jobId } = useParams();
