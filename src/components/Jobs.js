@@ -2,9 +2,17 @@ import React, { useState, useEffect } from 'react';
 import Slick from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import JobAppliedModel from "./JobAppliedModel";
 
 const Jobs = () => {
   const [loading, setLoading] = useState(true);
+  const [apply, setApply] = useState(false);
+
+  const handleClose = () => setApply(false);
+
+  const onClickApply = () => {
+    setApply(true);
+  };
 
   const settings = {
     dots: true,
@@ -82,6 +90,7 @@ const Jobs = () => {
 
   return (
     <div className="job-footer">
+      {apply && <JobAppliedModel apply={apply} handleClose={handleClose} />}
       {loading ? (
         <div className="d-flex justify-content-center my-5">
           <div className="spinner-border text-primary" role="status">
@@ -100,6 +109,7 @@ const Jobs = () => {
                     type="button"
                     className="btn btn-outline-primary"
                     disabled={job.buttonDisabled}
+                    onClick={onClickApply}
                   >
                     {job.buttonText}
                   </button>

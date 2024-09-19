@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { jobList } from "../data/jobList";
+import JobAppliedModel from "./JobAppliedModel";
 
 const JobDetail = () => {
   const { jobId } = useParams();
   const [activeTab, setActiveTab] = useState("description");
+  const [apply, setApply] = useState(false);
+
+  const handleClose = () => setApply(false);
 
   const job = jobList.find((job) => job.id === parseInt(jobId, 10));
 
@@ -12,10 +16,15 @@ const JobDetail = () => {
     return <div>Job Not Found</div>;
   }
 
+  const onClickApply = () => {
+    setApply(true);
+  };
+
   return (
     <div className="job-footer">
+      {apply && <JobAppliedModel apply={apply} handleClose={handleClose} />}
       <h2 className="text-center mb-2">{job.name}</h2>
-      <div className="card " style={{ minHeight: "300px" }}>
+      <div className="card" style={{ minHeight: "300px" }}>
         <div className="card-header">
           <ul className="nav nav-tabs card-header-tabs">
             <li className="nav-item">
@@ -76,13 +85,13 @@ const JobDetail = () => {
         </div>
       </div>
       <div className="btn">
-      <button
-        type="button"
-        className="btn btn-outline-primary"
-        disabled={job.buttonDisabled}
-      >
-        Apply Now
-      </button>
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          onClick={onClickApply}
+        >
+          Apply Now
+        </button>
       </div>
     </div>
   );
