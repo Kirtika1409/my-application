@@ -1,0 +1,123 @@
+/* General Styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the minimum height of the page is 100% of the viewport height */
+}
+
+.content-section {
+  flex: 1; /* Grow to fill the space between header and footer */
+  background-image: url('/src/assets/mainpic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 50px; /* Extra space for the content */
+}
+
+.search-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.search-section .form-control {
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+.search-section .btn {
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+.jobs-section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px 0;
+  min-height: 75vh;
+}
+
+.jobs-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.slick-slide {
+  padding: 0 5px; /* Space between images */
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Control the height of the images */
+  object-fit: cover; /* Cover the slider area without distortion */
+}
+
+.slick-prev, .slick-next {
+  z-index: 1; /* Ensure navigation arrows are on top of images */
+}
+
+.slick-dots {
+  bottom: 10px; /* Position dots closer to the bottom */
+}
+
+/* Footer Styles */
+.footer-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer-heading {
+  margin-bottom: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.footer-icon {
+  margin-right: 10px; /* Space between icon and text */
+  color: #007bff; /* Icon color */
+}
+
+.footer-item {
+  margin-bottom: 20px; /* Spacing between sections */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack heading and text vertically */
+}
+
+.footer-text {
+  margin: 0; /* Remove default margin */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+  color: #333; /* Icon color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Optional: Highlight active link */
+}

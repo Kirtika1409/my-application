@@ -1,0 +1,65 @@
+/* Ensure the row has space around it */
+.row {
+    margin: 0 auto; /* Center align the row */
+    max-width: 1200px; /* Limit the width of the row if needed */
+  }
+  
+  /* Add padding and margin to the card */
+  .card {
+    position: relative;
+    margin: 20px; /* Space around each card */
+    padding: 10px; /* Padding inside the card */
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure content does not overflow */
+  }
+  
+  /* Container for the image and overlay */
+  .image-container {
+    position: relative;
+    overflow: hidden; /* Ensure the overlay doesn't spill out */
+  }
+  
+  /* Image styling */
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Overlay styling */
+  .hover-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Show overlay on hover */
+  .image-container:hover .hover-description {
+    opacity: 1;
+  }
+  
+  /* Blockquote styling */
+  .blockquote {
+    margin: 0; /* Remove default margin */
+    padding: 10px;
+    font-style: italic;
+  }
+  
+  /* Blockquote footer styling */
+  .blockquote-footer {
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+  
