@@ -20,7 +20,7 @@ const ContactUs = () => {
         </Modal.Header>
         <Modal.Body>
           <p>For any inquiries, please call us at:</p>
-          <p>(123) 456-7890</p>
+          <p>UK: 0161 217 1517</p>
         </Modal.Body>
         <Modal.Footer>
           <Nav.Link onClick={handleClose}>

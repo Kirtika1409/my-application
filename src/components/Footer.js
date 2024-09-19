@@ -4,7 +4,7 @@ import { FaLinkedin, FaTwitter, FaFacebook, FaEnvelope, FaMapMarkerAlt, FaPhone 
 
 const Footer = () => {
   return (
-    <footer className="footer-section bg-light py-4">
+    <footer className="footer-section py-4" style={{backgroundColor: "#e9ecef"}}>
       <Container>
         <Row>
           <Col md={3} className="footer-item">
@@ -24,19 +24,19 @@ const Footer = () => {
           <Col md={3} className="footer-item">
             <div className="footer-content">
               <h5 className='footer-heading'><FaEnvelope className='footer-icon' /> Email Us</h5>
-              <p className="footer-text"><a href="mailto:info@example.com">info@example.com</a></p>
+              <p className="footer-text"><a href="mailto:info@example.com">info@volcanic.com</a></p>
             </div>
           </Col>
           <Col md={3} className="footer-item">
             <div className="footer-content">
               <h5 className='footer-heading'><FaPhone className='footer-icon' /> Get in Touch</h5>
-              <p className="footer-text"><a href="tel:+1234567890">+123 456 7890</a></p>
+              <p className="footer-text"><a href="tel:+1234567890">UK: 0161 217 1517</a></p>
             </div>
           </Col>
           <Col md={3} className="footer-item">
             <div className="footer-content">
               <h5 className='footer-heading'><FaMapMarkerAlt className='footer-icon' /> Find Us</h5>
-              <p className="footer-text">1234 Job Street, City, Country</p>
+              <p className="footer-text">Dale House Floor 8, Tiviot Dale, Stockport, SK1 1TB</p>
             </div>
           </Col>
         </Row>

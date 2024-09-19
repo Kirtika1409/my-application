@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar bg="light" expand="lg" sticky="top">
+        <Navbar style={{backgroundColor: "#e9ecef"}} expand="lg" sticky="top">
           <Container>
             <Navbar.Brand as={Link} to="/">
               <FaTrello style={{ marginRight: '8px', fontSize: '1.5rem' }} />
