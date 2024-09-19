@@ -13,6 +13,7 @@ import ContactUs from './components/ContactUs';
 import Joinus from './components/JoinUs';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
+import JobDetail from './components/JobDetail';
 
 function App() {
   return (
@@ -59,7 +60,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/insights" element={<Insight />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />      
+          <Route path="/login" element={<Login />} />   
+          <Route path="/jobdetail/:jobId" element={<JobDetail />} /> 
           </Routes>
         <Footer />
       </div>

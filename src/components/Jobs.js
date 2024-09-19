@@ -35,12 +35,11 @@ const Jobs = () => {
   };
 
   useEffect(() => {
-    // Simulate loading (e.g., fetching data)
     const timer = setTimeout(() => {
-      setLoading(false); // Set loading to false after the "data" is loaded
-    }, 2000); // Simulating a 2 second loading time
+      setLoading(false);
+    }, 2000); // load 2 sec
 
-    return () => clearTimeout(timer); // Cleanup the timer when component unmounts
+    return () => clearTimeout(timer);
   }, []);
 
   const jobsData = [

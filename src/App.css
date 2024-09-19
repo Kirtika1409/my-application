@@ -127,3 +127,14 @@ body, html {
   flex-direction: column;
   min-height: 75vh;
 }
+
+.custom-search-bar {
+  max-width: 600px; /* Adjust this value to reduce width */
+  margin: 0 auto; /* Center the search bar */
+}
+
+.custom-list-group {
+  max-width: 600px; /* Same width as search bar */
+  margin: 0 auto;   /* Center the list group */
+}
+
