@@ -82,7 +82,7 @@ const Jobs = () => {
   ];
 
   return (
-    <div className="App">
+    <div className="job-footer">
       {loading ? (
         <div className="d-flex justify-content-center my-5">
           <div className="spinner-border text-primary" role="status">
@@ -90,7 +90,6 @@ const Jobs = () => {
           </div>
         </div>
       ) : (
-        <div className="content-wrap">
           <div className="jobs-section">
             <h2 className="text-center mb-4">Featured Job Opportunities</h2>
             <Slick {...settings}>
@@ -109,7 +108,6 @@ const Jobs = () => {
               ))}
             </Slick>
           </div>
-        </div>
       )}
     </div>
   );

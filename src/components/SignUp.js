@@ -9,6 +9,7 @@ const SignUp = () => {
 
     }
   return (
+    <div className="job-footer">
     <div className="container my-2">
       <div className="card">
         <div className="card-header">
@@ -66,6 +67,7 @@ const SignUp = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 };

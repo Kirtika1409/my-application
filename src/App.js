@@ -22,7 +22,7 @@ function App() {
           <Container>
             <Navbar.Brand as={Link} to="/">
               <FaTrello style={{ marginRight: '8px', fontSize: '1.5rem' }} />
-              Job Finder
+              VOLCANIC
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -31,7 +31,7 @@ function App() {
                 <Nav.Link as={Link} to="/about">About</Nav.Link>
                 <Nav.Link >Candidate</Nav.Link>
                 <Nav.Link >Client</Nav.Link>
-                <Nav.Link as={Link} to="/join-us">
+                <Nav.Link as={Link}>
                   <Joinus />
                 </Nav.Link>
                 <Nav.Link as={Link} to="/insights">Insights</Nav.Link>
@@ -45,7 +45,6 @@ function App() {
           </Container>
         </Navbar>
 
-        {/* Define Routes */}
         <Routes>
           <Route path="/" element={
             <div className="content-section">

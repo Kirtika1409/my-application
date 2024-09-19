@@ -1,11 +1,12 @@
 import React from "react";
-import "../styles/insight.css"; // Import CSS for hover effect
+import "../styles/insight.css"; 
 import insight2 from "../assets/insight2.jpg";
 import insight3 from "../assets/insight3.jpg";
 
 const Insight = () => {
 
   return (
+    <div className="job-footer">
     <div className="row row-cols-1 row-cols-md-2 g-4">
       <div className="col">
         <div className="card">
@@ -42,6 +43,7 @@ const Insight = () => {
         </div>
       </div>
       
+    </div>
     </div>
   );
 };
